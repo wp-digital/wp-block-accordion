@@ -1,6 +1,6 @@
 !!! Coming soon !!!
 
-# Block Counter
+# Block Accordion
 
 ### Description
 
@@ -8,7 +8,7 @@ List with titles and descriptions with optional links.
 
 ### Demo
 
-[Counter Block](https://blocks.innocode.digital/accordion-block/)
+[Accordion Block](https://blocks.innocode.digital/accordion-block/)
 
 ### Install
 
@@ -25,7 +25,7 @@ List with titles and descriptions with optional links.
     git clone git@github.com:innocode-digital/wp-block-accordion.git
     ````
 
-Activate **Block Counter** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
+Activate **Block Accordion** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
 `wp plugin activate wp-block-accordion` or from **Plugins** page.
 
 ### Documentation
