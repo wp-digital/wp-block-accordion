@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "innocode/wp-block-accordion",
+    "version": "0.1.0",
+    "title": "Accordion",
+	"category": "design",
+	"icon": "smiley",
+	"description": "List with titles and descriptions with optional links.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "innocode-block-accordion",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
