@@ -1,0 +1,98 @@
+.wp-block-innocode-wp-block-accordion {
+  &-item {
+	border: 1px solid #000;
+	border-width: 1px 0;
+	padding: 20px;
+  }
+
+  &__link {
+	text-transform: none;
+	margin-bottom: 0 !important;
+  }
+
+  &__label {
+	display: flex;
+	flex-flow: row;
+	position: relative;
+
+	textarea {
+	  padding: 10px;
+	  box-sizing: content-box;
+	}
+  }
+
+  &__button {
+	font-size: 0;
+	position: absolute !important;
+	top: -15px;
+	right: 0;
+	transition: 300ms all ease;
+	border: none;
+	background: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	margin: 0 !important;
+
+	&::after {
+	  position: absolute !important;
+	  top: 0 !important;
+	  bottom: 0 !important;
+	  left: 50% !important;
+	  transform: translateX(-50%) !important;
+	  background: #000;
+	  width: 2px;
+	  content: '' !important;
+	  pointer-events: all !important;
+	  box-shadow: none !important;
+	  border-radius: 0 !important;
+	}
+
+	&::before {
+	  position: absolute;
+	  top: 50%;
+	  right: 0;
+	  left: 0;
+	  transform: translateY(-50%);
+	  background: #000;
+	  height: 2px;
+	  content: '';
+	}
+  }
+
+  &__content {
+	margin-top: 5px;
+	display: none;
+
+	> div {
+	  padding: 10px;
+	  box-sizing: content-box;
+	}
+  }
+
+  &__input {
+	position: fixed !important;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	top: -1000%;
+	left: -1000%;
+
+	&:checked {
+	  + .wp-block-innocode-wp-block-accordion__label {
+		.wp-block-innocode-wp-block-accordion__button {
+		  transform: rotate(45deg);
+
+		  &::after,
+		  &::before {
+			background: rgba(#000, 0.7) !important;
+		  }
+		}
+
+		+ .wp-block-innocode-wp-block-accordion__content {
+		  display: block;
+		}
+	  }
+	}
+  }
+}

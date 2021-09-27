@@ -1,3 +1,11 @@
-.innocode-block-accordion {
-	border: 1px dotted #f00;
+@import "common";
+
+.wp-block-innocode-wp-block-accordion {
+  &__link {
+	margin-bottom: -10px;
+  }
+
+  &__label {
+	padding-right: 40px;
+  }
 }

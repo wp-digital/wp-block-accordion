@@ -1,5 +1,6 @@
 class ClassNames {
-	static defaultClassBase = 'innocode-block-accordion';
+	static defaultDomainBase = 'innocode-block-accordion';
+	static defaultClassBase = 'wp-block-innocode-wp-block-accordion';
 
 	/**
 	 *

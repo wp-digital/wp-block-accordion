@@ -7,6 +7,7 @@ import icon from './icon';
 import './style.scss';
 
 registerBlockType('innocode/wp-block-accordion', {
+	apiVersion: 2,
 	attributes: {
 		id: {
 			type: 'string',
@@ -17,11 +18,15 @@ registerBlockType('innocode/wp-block-accordion', {
 		content: {
 			type: 'string',
 		},
-		linkTitle: {
+		link: {
 			type: 'string',
 		},
-		linkUrl: {
+		attributes: {
 			type: 'string',
+		},
+		alignment: {
+			type: 'string',
+			default: 'none',
 		},
 	},
 
