@@ -1,11 +1,4 @@
-import {
-	RichText,
-	PlainText,
-	AlignmentToolbar,
-	BlockControls,
-	InspectorControls,
-	ColorPalette,
-} from '@wordpress/block-editor';
+import { RichText, PlainText, AlignmentToolbar, BlockControls } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 import ClassNames from './VO/ClassNames';
 
