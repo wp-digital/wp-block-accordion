@@ -6,8 +6,26 @@ import icon from './icon';
 
 import './style.scss';
 
-registerBlockType( 'innocode/wp-block-accordion', {
+registerBlockType('innocode/wp-block-accordion', {
+	attributes: {
+		id: {
+			type: 'string',
+		},
+		title: {
+			type: 'string',
+		},
+		content: {
+			type: 'string',
+		},
+		linkTitle: {
+			type: 'string',
+		},
+		linkUrl: {
+			type: 'string',
+		},
+	},
+
 	edit: Edit,
 	save,
 	icon,
-} );
+});
