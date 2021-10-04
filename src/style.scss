@@ -1,24 +1,29 @@
 @import "common";
 
 .wp-block-innocode-wp-block-accordion {
-  &-item {
-	margin: 20px 0;
-  }
 
-  &__content {
-	margin-top: 20px;
-	margin-bottom: 0 !important;
-  }
-
-  &__button {
-	top: 0;
-  }
-
-  &__link {
-	& + .wp-block-innocode-wp-block-accordion__input + .wp-block-innocode-wp-block-accordion__label {
-	  .wp-block-innocode-wp-block-accordion__button {
-		top: -15px;
-	  }
+	&-item {
+		margin: 20px 0;
 	}
-  }
+
+	&__content {
+		margin-top: 20px;
+		margin-bottom: 0 !important;
+	}
+
+	&__button {
+		top: 0;
+	}
+
+	&__link {
+
+		// stylelint-disable-next-line
+		& + .wp-block-innocode-wp-block-accordion__input + .wp-block-innocode-wp-block-accordion__label {
+
+			// stylelint-disable-next-line
+			.wp-block-innocode-wp-block-accordion__button {
+				top: -15px;
+			}
+		}
+	}
 }
