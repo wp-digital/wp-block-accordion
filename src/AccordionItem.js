@@ -18,6 +18,17 @@ export const AccordionItem = ({
 	props = {},
 }) => {
 	const wrapperNames = () => new ClassNames().addToken(className);
+	const linkRenderComponent = link ? (
+		<div
+			className={wrapperNames()
+				.addElement('link')
+				.toString()}
+		>
+			<RichText.Content value={link} />
+		</div>
+	) : (
+		<></>
+	);
 
 	return (
 		<div
@@ -39,16 +50,8 @@ export const AccordionItem = ({
 						placeholder={__('Enter link', ClassNames.defaultDomainBase)}
 					/>
 				</div>
-			) : link ? (
-				<div
-					className={wrapperNames()
-						.addElement('link')
-						.toString()}
-				>
-					<RichText.Content value={link} />
-				</div>
 			) : (
-				<></>
+				linkRenderComponent
 			)}
 			<input
 				type="checkbox"

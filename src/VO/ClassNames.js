@@ -5,13 +5,13 @@ class ClassNames {
 	/**
 	 *
 	 * @private
-	 * @type string
+	 * @type {string}
 	 */
 	_baseClassName;
 
 	/**
 	 *
-	 * @type {[string]}
+	 * @type {string[]}
 	 * @private
 	 */
 	_tokens = [];
@@ -23,7 +23,7 @@ class ClassNames {
 	/**
 	 *
 	 * @param {string} name
-	 * @return {ClassNames}
+	 * @return {ClassNames} ClassNames
 	 */
 	addToken = (name) => {
 		if (!name) {
@@ -38,7 +38,7 @@ class ClassNames {
 	/**
 	 *
 	 * @param {string} token
-	 * @return {ClassNames}
+	 * @return {ClassNames} ClassNames
 	 */
 	extendBase = (token) => {
 		this._baseClassName = `${this._baseClassName}-${token}`;
@@ -49,7 +49,7 @@ class ClassNames {
 	/**
 	 *
 	 * @param {string} name
-	 * @return {ClassNames}
+	 * @return {ClassNames} ClassNames
 	 */
 	addElement = (name) => {
 		return this.addToken([this._baseClassName, '__', name].join(''));
@@ -57,7 +57,7 @@ class ClassNames {
 
 	/**
 	 *
-	 * @return {string}
+	 * @return {string} string
 	 */
 	toString = () => {
 		const clone = [...this._tokens];
