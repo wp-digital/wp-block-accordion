@@ -18,6 +18,7 @@
 	"dependencies": {
 		"@wordpress/block-editor": "^7.0.2",
 		"@wordpress/blocks": "^11.1.0",
+		"@wordpress/element": "^4.0.1",
 		"@wordpress/i18n": "^4.2.2",
 		"prettier": "^2.4.1"
 	},
