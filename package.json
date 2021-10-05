@@ -1,6 +1,6 @@
 {
 	"name": "wp-block-accordion",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "List with titles and descriptions with optional links.",
 	"author": "Innocode",
 	"license": "GPL-2.0-or-later",
