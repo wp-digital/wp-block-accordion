@@ -1,8 +1,8 @@
 @import "common";
 
-.wp-block-innocode-wp-block-accordion {
+.innocode-block-accordion {
 
-	&-item {
+	&_item {
 		margin: 20px 0;
 	}
 
@@ -18,10 +18,10 @@
 	&__link {
 
 		// stylelint-disable-next-line
-		& + .wp-block-innocode-wp-block-accordion__input + .wp-block-innocode-wp-block-accordion__label {
+		& + .innocode-block-accordion__input + .innocode-block-accordion__label {
 
 			// stylelint-disable-next-line
-			.wp-block-innocode-wp-block-accordion__button {
+			.innocode-block-accordion__button {
 				top: -15px;
 			}
 		}

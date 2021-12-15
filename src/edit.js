@@ -1,8 +1,9 @@
 import { useBlockProps } from '@wordpress/block-editor';
 import { useState, useEffect } from '@wordpress/element';
 
+import AccordionItem from './AccordionItem.js';
+
 import './editor.scss';
-import { AccordionItem } from './AccordionItem.js';
 
 export default function Edit({ setAttributes, attributes }) {
 	const [id] = useState(`accordion-input-${Math.random()}`);

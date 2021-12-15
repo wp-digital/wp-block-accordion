@@ -1,5 +1,5 @@
 class ClassNames {
-	static defaultClassBase = 'wp-block-innocode-wp-block-accordion';
+	static defaultClassBase = 'innocode-block-accordion';
 
 	/**
 	 *
@@ -40,7 +40,7 @@ class ClassNames {
 	 * @return {ClassNames} ClassNames
 	 */
 	extendBase = (token) => {
-		this._baseClassName = `${this._baseClassName}-${token}`;
+		this._baseClassName = `${this._baseClassName}_${token}`;
 
 		return this.addToken(this._baseClassName);
 	};

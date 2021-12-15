@@ -1,5 +1,6 @@
 import { useBlockProps } from '@wordpress/block-editor';
-import { AccordionItem } from './AccordionItem.js';
+
+import AccordionItem from './AccordionItem.js';
 
 export default function save(props) {
 	const { className } = useBlockProps.save();

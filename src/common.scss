@@ -1,6 +1,6 @@
-.wp-block-innocode-wp-block-accordion {
+.innocode-block-accordion {
 
-	&-item {
+	&_item {
 		border: 1px solid #000;
 		border-width: 1px 0;
 		padding: 20px;
@@ -83,10 +83,10 @@
 		&:checked {
 
 			// stylelint-disable-next-line
-			+ .wp-block-innocode-wp-block-accordion__label {
+			+ .innocode-block-accordion__label {
 
 				// stylelint-disable-next-line
-				.wp-block-innocode-wp-block-accordion__button {
+				.innocode-block-accordion__button {
 					transform: rotate(45deg);
 
 					&::after,
@@ -96,7 +96,7 @@
 				}
 
 				// stylelint-disable-next-line
-				+ .wp-block-innocode-wp-block-accordion__content {
+				+ .innocode-block-accordion__content {
 					display: block;
 				}
 			}

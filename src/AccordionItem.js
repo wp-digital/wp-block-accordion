@@ -1,8 +1,9 @@
 import { RichText, PlainText, AlignmentToolbar, BlockControls } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
+
 import ClassNames from './VO/ClassNames';
 
-export const AccordionItem = ({
+export default function AccordionItem({
 	className,
 	link,
 	id,
@@ -16,7 +17,7 @@ export const AccordionItem = ({
 	onAlignmentChange = () => {},
 	onContentChange = () => {},
 	props = {},
-}) => {
+}) {
 	const wrapperNames = () => new ClassNames().addToken(className);
 	const linkRenderComponent = link ? (
 		<div className={wrapperNames().addElement('link').toString()}>
@@ -77,4 +78,4 @@ export const AccordionItem = ({
 			)}
 		</div>
 	);
-};
+}
