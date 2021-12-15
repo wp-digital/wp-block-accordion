@@ -1,5 +1,3 @@
-!!! Coming soon !!!
-
 # Block Accordion
 
 ### Description
@@ -27,11 +25,3 @@ List with titles and descriptions with optional links.
 
 Activate **Block Accordion** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
 `wp plugin activate wp-block-accordion` or from **Plugins** page.
-
-### Documentation
-
-
-
-### Notes
-
-
