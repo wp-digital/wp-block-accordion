@@ -74,8 +74,9 @@ const handleToggle = (event) => {
 };
 
 const onHeaderClick = (event) => {
-	event.preventDefault();
-	handleToggle(event);
+	if (event.target.tagName !== 'A') {
+		handleToggle(event);
+	}
 };
 
 const onHeaderKeyDown = (event) => {
