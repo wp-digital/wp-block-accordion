@@ -1,8 +1,8 @@
-# Block Accordion
+# Accordion Block
 
 ### Description
 
-List with titles and descriptions with optional links.
+List of items with title and content.
 
 ### Demo
 
@@ -23,5 +23,5 @@ List with titles and descriptions with optional links.
     git clone git@github.com:innocode-digital/wp-block-accordion.git
     ````
 
-Activate **Block Accordion** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
+Activate **Accordion Block** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
 `wp plugin activate wp-block-accordion` or from **Plugins** page.

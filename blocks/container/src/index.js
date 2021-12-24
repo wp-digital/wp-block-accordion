@@ -7,9 +7,10 @@ import icon from './icon';
 
 import './style.scss';
 
-registerBlockType('innocode/block-accordion', {
+registerBlockType('innocode/block-accordion-container', {
 	apiVersion: 2,
 	supports: {
+		align: ['wide', 'full'],
 		className: false,
 	},
 	attributes,

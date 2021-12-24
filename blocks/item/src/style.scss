@@ -1,0 +1,90 @@
+.innocode-block-accordion-item {
+	border-top: 1px solid #000;
+
+	&:first-child {
+		border-top: 0;
+	}
+
+	&__header {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: #fff;
+		padding: 1em 40px 1em 1em;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	&__title {
+		margin: 0;
+		width: 100%;
+	}
+
+	&__subtitle {
+		font-size: 0.75em;
+	}
+
+	&__button {
+		transition: transform 0.3s;
+		transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		text-indent: -9999px;
+
+		&::after {
+			content: "";
+			transform: translateX(-50%);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			background: #000;
+			width: 2px;
+		}
+
+		&::before {
+			content: "";
+			transform: translateY(-50%);
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 0;
+			background: #000;
+			height: 2px;
+		}
+	}
+
+	&_is-opened &__button {
+		transform: translateY(-50%) rotate(45deg);
+	}
+
+	&__content {
+		transition: padding-top 0.3s, padding-bottom 0.3s, max-height 0.3s;
+		overflow: hidden;
+		padding: 0 1em;
+		max-height: 0;
+
+		&_left {
+			text-align: left;
+		}
+
+		&_center {
+			text-align: center;
+		}
+
+		&_right {
+			text-align: right;
+		}
+	}
+
+	&_is-opened &__content {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		max-height: none;
+	}
+}
