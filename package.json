@@ -1,6 +1,6 @@
 {
 	"name": "wp-block-accordion",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "List of items with title and content.",
 	"author": "Innocode",
 	"license": "GPL-2.0-or-later",
@@ -26,6 +26,7 @@
 		"@wordpress/element": "^4.0.4",
 		"@wordpress/hooks": "^3.2.2",
 		"@wordpress/i18n": "^4.2.4",
+		"@wordpress/primitives": "^3.0.4",
 		"lodash": "^4.17.21"
 	},
 	"devDependencies": {
