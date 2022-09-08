@@ -1,4 +1,4 @@
-import { RichText, AlignmentToolbar, BlockControls } from '@wordpress/block-editor';
+import { RichText, InnerBlocks } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 
 import {
@@ -6,7 +6,7 @@ import {
 	TITLE_TAG,
 	HAS_TOP_SUBTITLE_DEFAULT,
 	HAS_BOTTOM_SUBTITLE_DEFAULT,
-	CONTENT_ALIGNMENT_DEFAULT,
+	ALLOWED_BLOCKS,
 } from './constants';
 
 const AccordionItemSubtitle = ({ value, onChange, place, isEdit }) => {
@@ -45,31 +45,11 @@ const AccordionItemTitle = ({ value, onChange, isEdit }) => {
 	);
 };
 
-const AccordionItemContent = ({ value, onChange, alignment, onAlignmentChange, isEdit }) => {
-	let className = `${BLOCK_CLASS_NAME}__content`;
-
-	if (alignment !== 'none') {
-		className += ` ${BLOCK_CLASS_NAME}__content_${alignment}`;
-	}
-
-	return isEdit ? (
-		<>
-			<BlockControls>
-				<AlignmentToolbar value={alignment} onChange={onAlignmentChange} />
-			</BlockControls>
-			<RichText
-				tagName="div"
-				multiline="p"
-				value={value}
-				placeholder={__('Content', 'innocode-block-accordion')}
-				onChange={onChange}
-				className={className}
-			/>
-		</>
-	) : (
-		<RichText.Content tagName="div" multiline="p" value={value} className={className} />
-	);
-};
+const AccordionItemContent = ({ isEdit }) => (
+	<div className={`${BLOCK_CLASS_NAME}__content`}>
+		{isEdit ? <InnerBlocks allowedBlocks={ALLOWED_BLOCKS} /> : <InnerBlocks.Content allowedBlocks={ALLOWED_BLOCKS} />}
+	</div>
+);
 
 export default function AccordionItem({
 	defaultOpen,
@@ -78,13 +58,9 @@ export default function AccordionItem({
 	topSubtitle,
 	hasBottomSubtitle = HAS_BOTTOM_SUBTITLE_DEFAULT,
 	bottomSubtitle,
-	content,
-	contentAlignment = CONTENT_ALIGNMENT_DEFAULT,
 	onTitleChange = () => {},
 	onTopSubtitleChange = () => {},
 	onBottomSubtitleChange = () => {},
-	onContentChange = () => {},
-	onContentAlignmentChange = () => {},
 	isEdit = false,
 }) {
 	return (
@@ -109,13 +85,7 @@ export default function AccordionItem({
 				)}
 				<span className={`${BLOCK_CLASS_NAME}__button`}>{__('Toggle', 'innocode-block-accordion')}</span>
 			</div>
-			<AccordionItemContent
-				value={content}
-				onChange={onContentChange}
-				alignment={contentAlignment}
-				onAlignmentChange={onContentAlignmentChange}
-				isEdit={isEdit}
-			/>
+			<AccordionItemContent isEdit={isEdit} />
 		</>
 	);
 }

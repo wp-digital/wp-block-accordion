@@ -2,12 +2,7 @@ import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, PanelRow, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
-import {
-	BLOCK_CLASS_NAME,
-	HAS_TOP_SUBTITLE_DEFAULT,
-	HAS_BOTTOM_SUBTITLE_DEFAULT,
-	CONTENT_ALIGNMENT_DEFAULT,
-} from './constants';
+import { BLOCK_CLASS_NAME, HAS_TOP_SUBTITLE_DEFAULT, HAS_BOTTOM_SUBTITLE_DEFAULT } from './constants';
 
 import AccordionItem from './AccordionItem';
 
@@ -21,8 +16,6 @@ export default function Edit({ attributes, setAttributes }) {
 		topSubtitle,
 		hasBottomSubtitle = HAS_BOTTOM_SUBTITLE_DEFAULT,
 		bottomSubtitle,
-		content,
-		contentAlignment = CONTENT_ALIGNMENT_DEFAULT,
 	} = attributes;
 
 	const onChange = (key, value) => {
@@ -35,8 +28,6 @@ export default function Edit({ attributes, setAttributes }) {
 	const onTopSubtitleChange = (value) => onChange('topSubtitle', value);
 	const onHasBottomSubtitleChange = () => onChange('hasBottomSubtitle', !hasBottomSubtitle);
 	const onBottomSubtitleChange = (value) => onChange('bottomSubtitle', value);
-	const onContentChange = (value) => onChange('content', value);
-	const onContentAlignmentChange = (value) => onChange('contentAlignment', value);
 
 	const classNames = [BLOCK_CLASS_NAME];
 
@@ -84,13 +75,9 @@ export default function Edit({ attributes, setAttributes }) {
 				topSubtitle={topSubtitle}
 				hasBottomSubtitle={hasBottomSubtitle}
 				bottomSubtitle={bottomSubtitle}
-				content={content}
-				contentAlignment={contentAlignment}
 				onTitleChange={onTitleChange}
 				onTopSubtitleChange={onTopSubtitleChange}
 				onBottomSubtitleChange={onBottomSubtitleChange}
-				onContentChange={onContentChange}
-				onContentAlignmentChange={onContentAlignmentChange}
 				isEdit
 			/>
 		</div>

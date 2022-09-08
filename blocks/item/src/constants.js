@@ -9,7 +9,9 @@ export const HAS_BOTTOM_SUBTITLE_DEFAULT = applyFilters(
 	'innocode.block-accordion-item.has_bottom_subtitle.default',
 	false
 );
-export const CONTENT_ALIGNMENT_DEFAULT = applyFilters(
-	'innocode.block-accordion-item.content_alignment.default',
-	'none'
-);
+
+export const ALLOWED_BLOCKS = applyFilters('innocode.block-accordion-item.allowed_blocks', [
+	'core/heading',
+	'core/paragraph',
+	'core/list',
+]);

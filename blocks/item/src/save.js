@@ -1,11 +1,6 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
-import {
-	BLOCK_CLASS_NAME,
-	HAS_TOP_SUBTITLE_DEFAULT,
-	HAS_BOTTOM_SUBTITLE_DEFAULT,
-	CONTENT_ALIGNMENT_DEFAULT,
-} from './constants';
+import { BLOCK_CLASS_NAME, HAS_TOP_SUBTITLE_DEFAULT, HAS_BOTTOM_SUBTITLE_DEFAULT } from './constants';
 
 import AccordionItem from './AccordionItem';
 
@@ -17,8 +12,6 @@ export default function save({ attributes }) {
 		topSubtitle,
 		hasBottomSubtitle = HAS_BOTTOM_SUBTITLE_DEFAULT,
 		bottomSubtitle,
-		content,
-		contentAlignment = CONTENT_ALIGNMENT_DEFAULT,
 	} = attributes;
 	const classNames = [BLOCK_CLASS_NAME];
 
@@ -39,8 +32,6 @@ export default function save({ attributes }) {
 				topSubtitle={topSubtitle}
 				hasBottomSubtitle={hasBottomSubtitle}
 				bottomSubtitle={bottomSubtitle}
-				content={content}
-				contentAlignment={contentAlignment}
 			/>
 		</div>
 	);
