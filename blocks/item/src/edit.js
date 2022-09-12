@@ -42,26 +42,26 @@ export default function Edit({ attributes, setAttributes }) {
 			})}
 		>
 			<InspectorControls>
-				<PanelBody title={__('Settings', 'innocode-block-accordion')}>
+				<PanelBody title={__('Settings', 'innocode-blocks')}>
 					<PanelRow>
 						<ToggleControl
-							label={__('Open by default', 'innocode-block-accordion')}
+							label={__('Open by default', 'innocode-blocks')}
 							checked={defaultOpen}
 							onChange={onDefaultOpenChange}
 						/>
 					</PanelRow>
 				</PanelBody>
-				<PanelBody title={__('Subtitle Settings', 'innocode-block-accordion')} initialOpen={false}>
+				<PanelBody title={__('Subtitle Settings', 'innocode-blocks')} initialOpen={false}>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show before title', 'innocode-block-accordion')}
+							label={__('Show before title', 'innocode-blocks')}
 							checked={hasTopSubtitle}
 							onChange={onHasTopSubtitleChange}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show after title', 'innocode-block-accordion')}
+							label={__('Show after title', 'innocode-blocks')}
 							checked={hasBottomSubtitle}
 							onChange={onHasBottomSubtitleChange}
 						/>

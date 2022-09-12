@@ -1,14 +1,14 @@
 {
 	"apiVersion": 2,
 	"name": "innocode/block-accordion-container",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "title": "Accordion",
 	"category": "design",
 	"description": "List for items.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "innocode-block-accordion",
+	"textdomain": "innocode-blocks",
 	"editorScript": "file:./build/index.js",
     "script": "file:./build/view.js",
 	"editorStyle": "file:./build/index.css",

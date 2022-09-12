@@ -21,7 +21,7 @@ const AccordionItemSubtitle = ({ value, onChange, place, isEdit }) => {
 			tagName="span"
 			multiline={false}
 			value={value}
-			placeholder={__('Subtitle', 'innocode-block-accordion')}
+			placeholder={__('Subtitle', 'innocode-blocks')}
 			onChange={onChange}
 			className={className}
 		/>
@@ -36,7 +36,7 @@ const AccordionItemTitle = ({ value, onChange, isEdit }) => {
 			tagName={TITLE_TAG}
 			multiline={false}
 			value={value}
-			placeholder={__('Title', 'innocode-block-accordion')}
+			placeholder={__('Title', 'innocode-blocks')}
 			onChange={onChange}
 			className={className}
 		/>
@@ -83,7 +83,7 @@ export default function AccordionItem({
 						isEdit={isEdit}
 					/>
 				)}
-				<span className={`${BLOCK_CLASS_NAME}__button`}>{__('Toggle', 'innocode-block-accordion')}</span>
+				<span className={`${BLOCK_CLASS_NAME}__button`}>{__('Toggle', 'innocode-blocks')}</span>
 			</div>
 			<AccordionItemContent isEdit={isEdit} />
 		</>

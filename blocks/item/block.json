@@ -1,7 +1,7 @@
 {
 	"apiVersion": 2,
 	"name": "innocode/block-accordion-item",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "title": "Accordion Item",
 	"category": "design",
 	"description": "List item with title and content.",
@@ -9,7 +9,7 @@
 		"html": false
 	},
     "parent": ["innocode/block-accordion-container"],
-	"textdomain": "innocode-block-accordion",
+	"textdomain": "innocode-blocks",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"
