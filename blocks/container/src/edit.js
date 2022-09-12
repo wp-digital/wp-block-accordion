@@ -47,11 +47,7 @@ export default function Edit({ attributes, setAttributes }) {
 			<InspectorControls>
 				<PanelBody title={__('Settings', 'innocode-blocks')}>
 					<PanelRow>
-						<ToggleControl
-							label={__('Show title', 'innocode-blocks')}
-							checked={hasTitle}
-							onChange={onHasTitleChange}
-						/>
+						<ToggleControl label={__('Show title', 'innocode-blocks')} checked={hasTitle} onChange={onHasTitleChange} />
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
