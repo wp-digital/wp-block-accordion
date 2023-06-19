@@ -1,11 +1,16 @@
 {
-  "name": "innocode-digital/wp-block-accordion",
-  "version": "2.2.0",
+  "name": "wpd-digital/wp-block-accordion",
+  "version": "2.3.0",
   "type": "wordpress-plugin",
   "license": "GPL-2.0+",
   "require": {
 	"php": ">=7.1",
 	"composer/installers": "^1.9"
   },
-  "description": "List of items with title and content."
+  "description": "List of items with title and content.",
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
 }

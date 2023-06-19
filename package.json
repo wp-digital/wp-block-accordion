@@ -1,8 +1,8 @@
 {
 	"name": "wp-block-accordion",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"description": "List of items with title and content.",
-	"author": "Innocode",
+	"author": "SMFB Dinamo",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {

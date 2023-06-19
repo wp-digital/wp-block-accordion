@@ -42,26 +42,26 @@ export default function Edit({ attributes, setAttributes }) {
 			})}
 		>
 			<InspectorControls>
-				<PanelBody title={__('Settings', 'innocode-blocks')}>
+				<PanelBody title={__('Settings', 'wpd-blocks')}>
 					<PanelRow>
 						<ToggleControl
-							label={__('Open by default', 'innocode-blocks')}
+							label={__('Open by default', 'wpd-blocks')}
 							checked={defaultOpen}
 							onChange={onDefaultOpenChange}
 						/>
 					</PanelRow>
 				</PanelBody>
-				<PanelBody title={__('Subtitle Settings', 'innocode-blocks')} initialOpen={false}>
+				<PanelBody title={__('Subtitle Settings', 'wpd-blocks')} initialOpen={false}>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show before title', 'innocode-blocks')}
+							label={__('Show before title', 'wpd-blocks')}
 							checked={hasTopSubtitle}
 							onChange={onHasTopSubtitleChange}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show after title', 'innocode-blocks')}
+							label={__('Show after title', 'wpd-blocks')}
 							checked={hasBottomSubtitle}
 							onChange={onHasBottomSubtitleChange}
 						/>

@@ -1,14 +1,14 @@
 {
 	"apiVersion": 2,
-	"name": "innocode/block-accordion-container",
-    "version": "2.2.0",
+	"name": "wpd/block-accordion-container",
+    "version": "2.3.0",
     "title": "Accordion",
 	"category": "design",
 	"description": "List for items.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "innocode-blocks",
+	"textdomain": "wpd-blocks",
 	"editorScript": "file:./build/index.js",
     "script": "file:./build/view.js",
 	"editorStyle": "file:./build/index.css",

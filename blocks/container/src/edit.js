@@ -45,21 +45,21 @@ export default function Edit({ attributes, setAttributes }) {
 			})}
 		>
 			<InspectorControls>
-				<PanelBody title={__('Settings', 'innocode-blocks')}>
+				<PanelBody title={__('Settings', 'wpd-blocks')}>
 					<PanelRow>
-						<ToggleControl label={__('Show title', 'innocode-blocks')} checked={hasTitle} onChange={onHasTitleChange} />
+						<ToggleControl label={__('Show title', 'wpd-blocks')} checked={hasTitle} onChange={onHasTitleChange} />
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show description', 'innocode-blocks')}
+							label={__('Show description', 'wpd-blocks')}
 							checked={hasDescription}
 							onChange={onHasDescriptionChange}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Always open', 'innocode-blocks')}
-							help={__('Leaves items open while opening another item.', 'innocode-blocks')}
+							label={__('Always open', 'wpd-blocks')}
+							help={__('Leaves items open while opening another item.', 'wpd-blocks')}
 							checked={alwaysOpen}
 							onChange={onAlwaysOpenChange}
 						/>
@@ -71,7 +71,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<RichText
 						tagName={TITLE_TAG}
 						value={title}
-						placeholder={__('Title', 'innocode-blocks')}
+						placeholder={__('Title', 'wpd-blocks')}
 						onChange={onTitleChange}
 						className={`${BLOCK_CLASS_NAME}__title`}
 					/>
@@ -81,7 +81,7 @@ export default function Edit({ attributes, setAttributes }) {
 						tagName="div"
 						multiline="p"
 						value={description}
-						placeholder={__('Description', 'innocode-blocks')}
+						placeholder={__('Description', 'wpd-blocks')}
 						onChange={onDescriptionChange}
 						className={`${BLOCK_CLASS_NAME}__description`}
 					/>

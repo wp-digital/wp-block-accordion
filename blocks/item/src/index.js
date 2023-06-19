@@ -7,7 +7,7 @@ import icon from './icon';
 
 import './style.scss';
 
-registerBlockType('innocode/block-accordion-item', {
+registerBlockType('wpd/block-accordion-item', {
 	apiVersion: 2,
 	supports: {
 		align: ['wide', 'full'],
@@ -17,5 +17,5 @@ registerBlockType('innocode/block-accordion-item', {
 	edit: Edit,
 	save,
 	icon,
-	parent: ['innocode/block-accordion-container'],
+	parent: ['wpd/block-accordion-container'],
 });
