@@ -9,6 +9,7 @@ import {
 	HAS_DESCRIPTION_DEFAULT,
 	ALWAYS_OPEN_DEFAULT,
 	ALLOWED_BLOCKS,
+	TEMPLATE,
 } from './constants/editor';
 
 import './editor.scss';
@@ -88,7 +89,7 @@ export default function Edit({ attributes, setAttributes }) {
 				)}
 			</div>
 			<div className={`${BLOCK_CLASS_NAME}__list`}>
-				<InnerBlocks allowedBlocks={ALLOWED_BLOCKS} />
+				<InnerBlocks allowedBlocks={ALLOWED_BLOCKS} template={TEMPLATE} />
 			</div>
 		</div>
 	);
