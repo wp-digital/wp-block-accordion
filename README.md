@@ -6,7 +6,7 @@ List of items with title and content.
 
 ### Demo
 
-[Accordion Block](https://blocks.wpd.digital/accordion-block/)
+[Accordion Block](https://demo.wpd.digital/accordion-block/)
 
 ### Install
 
