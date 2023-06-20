@@ -1,7 +1,7 @@
 {
 	"apiVersion": 2,
 	"name": "wpd/block-accordion-container",
-    "version": "2.3.0",
+    "version": "2.3.2",
     "title": "Accordion",
 	"category": "design",
 	"description": "List for items.",

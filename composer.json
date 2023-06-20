@@ -1,6 +1,6 @@
 {
   "name": "wpd-digital/wp-block-accordion",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "type": "wordpress-plugin",
   "license": "GPL-2.0+",
   "require": {
