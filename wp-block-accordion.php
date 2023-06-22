@@ -4,7 +4,7 @@
  * Description:       List of items with title and content.
  * Requires at least: 5.8
  * Requires PHP:      7.1
- * Version:           2.4.1
+ * Version:           2.4.2
  * Author:            SMFB Dinamo
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
